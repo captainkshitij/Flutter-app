@@ -1,6 +1,5 @@
 
 
-import 'package:Beats/screens/audio/art.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:Beats/data/data.dart';
@@ -8,7 +7,7 @@ import 'package:Beats/screens/audio/offlineplayer.dart';
 
 import '../home/home.dart';
 
-class Offlinelibrary extends StatelessWidget {
+class Artist extends StatelessWidget {
   AppBar appBar(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.pinkAccent,
@@ -97,12 +96,10 @@ class AudioBody extends StatelessWidget {
       child: ListView(
         padding: const EdgeInsets.all(8),
         children: <Widget>[
-          Image.asset(
-                "assets/icons/live.gif",
-                fit: BoxFit.fill,
-              ),
+         
            Text(
-                "Beats Top Picks",
+                "Ankit Tiwarii's Best",
+                textAlign: TextAlign.center,
                 style: GoogleFonts.lato(
                     color: Colors.white,
                     fontSize: 20,
@@ -110,87 +107,21 @@ class AudioBody extends StatelessWidget {
               ),
              
            Container(
-      height: 200,
+      height: 500,
       color: Colors.black,
       child: Expanded(
                 child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
+                  scrollDirection: Axis.vertical,
                   itemCount: datas.length,
                   itemBuilder: (BuildContext context, int index) =>
                       BuildAudioCard(
-                    data: datas[index],
+                    data: datasa[index],
                     itemIndex: index,
                   ),
                 ),
               ),
     ),
-     Text(
-                "Popular",
-                textAlign: TextAlign.center,
-                style: GoogleFonts.lato(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400),
-              ),
-           Container(
-      height: 200,
-      color: Colors.black,
-      child: Expanded(
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: datas.length,
-                  itemBuilder: (BuildContext context, int index) =>
-                      BuildAudioCard(
-                    data: datas[index],
-                    itemIndex: index,
-                  ),
-                ),
-              ),
-    ),
-     Text(
-                "Artists",
-                style: GoogleFonts.lato(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400),
-              ),
-           Container(
-      height: 200,
-      color: Colors.black,
-      child: Expanded(
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: datas.length,
-                  itemBuilder: (BuildContext context, int index) =>
-                      BuildArt(
-                    data: datast[index],
-                    itemIndex: index,
-                  ),
-                ),
-              ),
-    ),
-     Text(
-                "Hindi",
-                style: GoogleFonts.lato(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400),
-              ),
-         Container(
-      height: 200,
-      color: Colors.black,
-      child: Expanded(
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: datas.length,
-                  itemBuilder: (BuildContext context, int index) =>
-                      BuildAudioCard(
-                    data: datas[index],
-                    itemIndex: index,
-                  ),
-                ),
-              ),
-    ),
+    
 
        
         ],
@@ -229,6 +160,7 @@ class BuildAudioCard extends StatelessWidget {
           ),
           child: Container(
               width: 200,
+              
               child: Column(
                 children: <Widget>[
                   ListTile(
@@ -287,7 +219,9 @@ class BuildArt extends StatelessWidget {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (contex) => Artist(),
+              builder: (contex) => OfflinePlayer(
+                data: datast[itemIndex],
+              ),
             ),
           ),
           child: Container(

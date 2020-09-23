@@ -87,6 +87,120 @@ List<Data> datas = [
   ),
 ];
 
+
+List<Data> datast = [
+  Data(
+    id: 1,
+    title: "",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/hardafa.mp3',
+    thumb: "assets/images/ankit.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/hardafa.mp3',
+  ),
+  Data(
+    id: 2,
+    title: "",
+    artist: "Adhyayan Suman",
+    asset: 'assets/audios/soniyo.mp3',
+    thumb: "assets/images/suman.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/soniyo.mp3',
+  ),
+  Data(
+    id: 3,
+    title: "",
+    artist: "Badshah ",
+    asset: 'assets/audios/genda.mp3',
+    thumb: "assets/images/bad.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/genda.mp3',
+  ),
+  Data(
+    id: 4,
+    title: "",
+    artist: "Ved Sharma",
+    asset: 'assets/audios/malang.mp3',
+    thumb: "assets/images/raj.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/malang.mp3',
+  ),
+];
+
+List<Data> datasa = [
+  Data(
+    id: 1,
+    title: "Sunn raha hain",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/hardafa.mp3',
+    thumb: "assets/images/a1.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/hardafa.mp3',
+  ),
+  Data(
+    id: 2,
+    title: "Galliyan",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/soniyo.mp3',
+    thumb: "assets/images/a2.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/soniyo.mp3',
+  ),
+  Data(
+    id: 3,
+    title: "Tu hain ke nahi",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/genda.mp3',
+    thumb: "assets/images/a3.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/genda.mp3',
+  ),
+  Data(
+    id: 4,
+    title: "Phir na kabhi",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/malang.mp3',
+    thumb: "assets/images/a4.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/malang.mp3',
+  ),
+  Data(
+    id: 5,
+    title: "Teh hain",
+    artist: "Ankit Tiwari",
+    asset: 'assets/audios/kehndi.mp3',
+    thumb: "assets/images/a5.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/kehndi.mp3',
+  ),
+  Data(
+    id: 6,
+    title: "Khuch Bhi ho Jaye",
+    artist: "B Praak",
+    asset: 'assets/audios/kuchbhi.mp3',
+    thumb: "assets/images/kuch.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/kuchbhi.mp3',
+  ),
+  Data(
+    id: 7,
+    title: "Asal Mein",
+    artist: "Darshan Raval",
+    asset: 'assets/audios/asal.mp3',
+    thumb: "assets/images/asal.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/asal.mp3',
+  ),
+  Data(
+    id: 8,
+    title: "Chal Ghar Chalen",
+    artist: "Arijit Singh",
+    asset: 'assets/audios/chal.mp3',
+    thumb: "assets/images/malang.jpg",
+    url:
+        'https://raw.githubusercontent.com/shivam1808/Beats-Audio-Video-Player/master/assets/audios/chal.mp3',
+  ),
+];
 class Video {
   final int id;
   final String title, artist, url, thumb, asset;
